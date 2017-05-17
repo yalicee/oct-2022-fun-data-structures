@@ -10,12 +10,9 @@ In this 2 day sprint you will be implementing three data structures that are com
 
 3. Be sure to test your functions as you go.
 
-4. You can do this two different ways:
-  - You can implement each creational pattern in its own file with its own test file.
-  - You can have just one file+tests for each data structure and refactor them (commiting after each successful implementation).
+4. Implement each creational pattern in its own file with its own test file.
   
-The first option is simpler, but the second one adheres to best practices, so agree on one or the other with your pair before you start.
-
+#### Important!
 You may **not** use JavaScript arrays or any array methods or properties to implement the data structures. Everything should be implemented with objects and custom methods.
 
 ### Extra credit
