@@ -1,18 +1,22 @@
-## Stacks and Queues with 4 Object Creational Patterns
+## Data Structures with Object Creational Patterns
 
-In this 2 day sprint you will be implementing two data structures that are commonly used in computer programming: stacks and queues. You have already learned about one use of stacks: for keeping track of a pile of functions that are in the process of execution. A queue data structure would be useful on occasions where you want to process tasks in the same order as they arrive, such as in a messaging application or a printer queue.
+In this 2 day sprint you will be implementing three data structures that are commonly used in computer science: stacks, queues and sets. You have already learned about one use of stacks: for keeping track of a pile of functions that are in the process of execution. A queue data structure would be useful on occasions where you want to process tasks in the same order as they arrive, such as in a messaging application or a printer queue. Sets are used to keep track of groups of unique values, e.g. do all users in a group belong to a bigger group?
 
 #### Goals
 
-1. Research stacks & queues and their corresponding public APIs. Make sure you understand the concept of LIFO and FIFO data structures. Before starting, double check with us that you have a good understanding of their public methods.
+1. Research the data structures and their corresponding public APIs. Make sure you understand how they operate internally and double check with us that you have a good understanding of their public methods before you start.
 
-2. Write code for a stack and a queue using each of the 4 different object creational patterns (functional, functional-shared, prototypal & pseudo-classical).
+2. Implement all data structures 4 times, once for each Object Creational Pattern that we'll show in the lectures (functional,  functional-shared, prototypal & pseudo-classical).
 
 3. Be sure to test your functions as you go.
 
-4. You will end up with eight source files and eight test files. One stack and one queue for each Object pattern.
+4. You can do this two different ways:
+  - You can implement each creational pattern in its own file with its own test file.
+  - You can have just one file+tests for each data structure and refactor them (commiting after each successful implementation).
+  
+The first option is simpler, but the second one adheres to best practices, so agree on one or the other with your pair before you start.
 
-It's very important that after you finish each exercise you try not to reference the code (whether source or test) of the previous one. Attack it afresh if you can. You must not use JavaScript Arrays (and thus of the array methods such as push, pop). Use objects only.
+You may **not** use JavaScript arrays or any array methods or properties to implement the data structures. Everything should be implemented with objects and custom methods.
 
 ### Extra credit
 
