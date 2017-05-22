@@ -6,11 +6,13 @@ In this 2 day sprint you will be implementing 2 or 3 data structures that are co
 
 The lectures introduce you to four different object creational patterns that you will be using to create new instances of stacks, queues and sets. The first two lectures focus on the **functional** and **functional shared** pattern. 
 
-[Functional Pattern](https://youtu.be/QbGvHH9KMvI)
+- [Functional Pattern](https://youtu.be/QbGvHH9KMvI)
 
-[Functional Shared Pattern](https://youtu.be/oYD7yErGmb0)
+- [Functional Shared Pattern](https://youtu.be/oYD7yErGmb0)
 
 After lunch we will look at JavaScript prototypes, the prototype chain, and the **prototypal pattern** of object creation.
+
+- [Prototypal Pattern](https://youtu.be/9L5IvvE2UT8)
 
 On the second day of this sprint the lectures will look at the final **pseudoclassical** pattern.
 
