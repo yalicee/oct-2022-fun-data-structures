@@ -31,7 +31,7 @@ You may **not** use JavaScript arrays or any array methods or properties to impl
 
 # Advanced
 
-## Sets
+## Sets
 
 Implement a set constructor for every object creational pattern. [Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those.
 
