@@ -19,10 +19,11 @@ You may **not** use JavaScript arrays or any array methods or properties to impl
 
 # Advanced
 
-Implement the set data structure. [Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those.
+1) Implement the set data structure. [Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those.
 
-If you finish that, research other data structures and see if you can implement them.
+2) Implement the tree data structure. [Trees] (https://en.wikipedia.org/wiki/Tree_(data_structure)) also have a lot of methods, many of which may come into tomorrow's sprint. Focus today on implementing methods that add and remove data (e.g. addData, removeData) or return a boolean, (e.g. isParent, isRoot, hasSiblings, isLeaf). Look through the article for ideas on the terminology to use.
 
+3) If you finish this, have a look for other potential data structures and see if you can implement useful functions they may have.
 
 ### Learning objectives
 
