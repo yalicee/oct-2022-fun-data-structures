@@ -5,4 +5,4 @@ function createStack () {
 
 }
 
-module.exports = Stack;
+module.exports = createStack;

@@ -1,7 +1,7 @@
 
-const Stack = require('../data-structures/stack.js');
+const createStack = require('../data-structures/stack.js');
 
-describe('Stack',() => {
+describe('createStack',() => {
   it('',() => {
     
   });
