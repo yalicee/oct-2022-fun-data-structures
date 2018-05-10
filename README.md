@@ -21,10 +21,10 @@ const testStack = createStack();
 testStack.storage // {}
 ```
 
-* It should have an isEmpty property, which is a boolean, initially set to false.
+* It should have an isEmpty property, which is a boolean, initially set to true.
 ```js
 const testStack = createStack();
-testStack.isEmpty // false;
+testStack.isEmpty // true;
 
 ```
 
