@@ -64,7 +64,7 @@ testStack.peek() // returns 'pear'
 
 ```js 
 
-const testQueue = new Queue(5);
+const testQueue = createQueue(5);
 // the new queue instance is allowed up to 5 items in the queue storage
 ```
 
