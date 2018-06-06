@@ -4,6 +4,7 @@ In this 1 day sprint you will be implementing 2 data structures that are commonl
 
 # Core Goals
 
+## Stacks
 
 1.  Implement a `createStack` factory function. 
 An instance of `createStack` should have the following:
@@ -60,7 +61,9 @@ testStack.push('pear');
 testStack.peek() // returns 'pear'
 ```
 
-2.  Implement a `createQueue` factory function that returns a queue instance.  The `createQueue` constructor will take a single argument representing the limit of the number of items in the queue.  E.g. 
+## Queues
+
+2.  Implement a `createQueue` factory function that returns a queue instance.  The `createQueue` function will take a single argument representing the limit of the number of items in the queue.  E.g. 
 
 ```js 
 
