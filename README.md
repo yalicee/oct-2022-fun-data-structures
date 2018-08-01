@@ -6,88 +6,19 @@ In this 1 day sprint you will be implementing 2 data structures that are commonl
 
 ## Stacks
 
-1.  Implement a `createStack` factory function. 
-An instance of `createStack` should have the following:
+1.  Implement a `createStack` factory function. Your `createStack` function should create a stack instance with appropriate **properties** and **methods**.  You should do a small amount of research to find out what the stack data-structure looks like.  Here is a link to get you started: https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm
 
-* It should have a quantity property which is set to 0.
-```js
-const testStack = createStack();
-testStack.quantity  // 0
-```
-
-* It should have a storage property, which is set to an empty object.
-
-```js
-const testStack = createStack();
-testStack.storage // {}
-```
-
-* It should have an isEmpty property, which is a boolean, initially set to true.
-```js
-const testStack = createStack();
-testStack.isEmpty // true;
-
-```
-
-* It should have a `push` method, which can add items to the stack storage.
-```js 
-const testStack = createStack();
-testStack.push('apple');
-testStack.storage // { 1 : 'apple' }
-testStack.push('orange');
-testStack.storage // { 1 : 'apple', 2 : 'orange' } 
-```
-
-* It should have a `pop` method, which can remove items from the stack storage.  It will also return the last item removed from the stack storage.
-```js
-const testStack = createStack();
-testStack.push('apple');
-testStack.push('orange');
-testStack.push('banana');
-testStack.pop() // returns 'banana'
-testStack.storage // {1 : 'apple', 2 : 'orange' }
-```
-
-
-* It should have a `peek` method that will show the item at the top of the stack storage.
-
-```js
-const testStack = createStack();
-testStack.push('apple');
-testStack.push('orange');
-testStack.push('banana');
-testStack.push('kiwi');
-testStack.push('pear');
-testStack.peek() // returns 'pear'
-```
 
 ## Queues
 
-2.  Implement a `createQueue` factory function that returns a queue instance.  The `createQueue` function will take a single argument representing the limit of the number of items in the queue.  E.g. 
+2.  Implement a `createQueue` factory function that returns a queue instance.  The `createQueue` function will take a single argument representing the limit of the number of items in the queue.  Again you can follow the above link for a good e
 
-```js 
-
-const testQueue = createQueue(5);
-// the new queue instance is allowed up to 5 items in the queue storage
-```
-
-An instance of `createQueue` should have the following:
-
-* It should have `front` and `back` properties.  These are both numbers that represent the position of the front and back of the queue.  You can use these properties to add and remove items from the queue at the correct position.
-
-* It should have an `enQueue` method that adds items to the **back** of the queue.  Items can only be added if the queue isn't full of course.
-
-* It should have an `deQueue` method that removes items from the **front** of the queue.
-
-* It should have a `getSize` method that returns the number of items in the queue.
-
-* It should have an `isFull` method that will return a boolean indicating if the queue is full or not.
-
-**NOTE** Implement each data structure in its own file with its own test file.
 
 #### Important!
 
-You may **not** use JavaScript arrays or any array methods or properties to implement your stack and queue structures. Everything should be implemented with objects and custom methods.
+* You may **not** use JavaScript arrays or any array methods or properties to implement your stack and queue structures. Everything should be implemented with objects and custom methods.
+
+* An important feature of this sprint is that you are able to research and lookup documentation or explanations and interpret these to come up with your own solutions.  A key part of being a developer!
 
 # Advanced - only attempt these if you get through stacks and queues!
 
