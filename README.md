@@ -1,61 +1,81 @@
-## Data Structures with the functional pattern
+# Data Structures
 
-In this 1 day sprint you will be implementing 2 data structures that are commonly used in computer science: stacks and queues. You have already learned about one use of stacks: for keeping track of a pile of functions that are in the process of execution. A queue data structure would be useful on occasions where you want to process tasks in the same order as they arrive, such as in a messaging application or a printer queue.
+In this sprint you will be implementing 2 data structures that are commonly used in computer science: [stacks](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm) and [queues](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm).
 
-# Core Goals
+**Stacks** are named as such as they behave like real-world stacks and allow data operations at one end only. Stacks have a LIFO (Last In First Out) data structure, meaning the element which is added last is accessed first. \
+You have already learned about one use of stacks: using the call stack to keep track of a pile of functions that are in the process of execution.
 
-### Learning objectives
+**Queues** differ from stacks in that they are open at both ends; one end is used to insert data and the other end is used to access/remove data. Queues have a FIFO (First In First Out) data structure, meaning that the item stored first will also be accessed first, and the item stored last will be accessed last - like a real queue!\
+A queue data structure would be useful on occasions where you want to process tasks in the same order as they arrive, such as in a messaging application or a printer queue.
 
-- Fully understand the functional pattern of object creation in JavaScript,           together with its pros and cons. 
+### **Learning objectives**
+
+- Fully understand the functional pattern of object creation in JavaScript, together with its pros and cons. 
 - Learn, throughout the sprint, about the 4 rules of `this` in JavaScript.
 - Introduce yourself to data structures.
 
-## Stacks
+**NOTE** Implement each data structure in its own file with its own test file.
 
-1.  Implement a `createStack` factory function. 
+### * Important! *
+
+You must **not** use JavaScript arrays or any array methods or properties to implement your stack and queue structures. Everything should be implemented with _objects_ and custom methods.
+
+## **Stacks**
+
+1.  Implement a `createStack` factory function.\
 An instance of `createStack` should have the following:
 
-* It should have a quantity property which is set to 0.
+* A `quantity` property which should have an initial value of 0 and represents the number of items currently in the stack storage.
 ```js
 const testStack = createStack();
 testStack.quantity  // 0
 ```
 
-* It should have a storage property, which is set to an empty object.
-
+* A `storage` property, which is initially set to an empty object.
 ```js
 const testStack = createStack();
 testStack.storage // {}
 ```
 
-* It should have an isEmpty property, which is a boolean, initially set to true.
+* A `maxSize` property, which can either be passed as an argument when creating the stack, or use a default value.
 ```js
-const testStack = createStack();
-testStack.isEmpty // true;
-
+const testStack = createStack(5);
+testStack.maxSize // 5
 ```
 
-* It should have a `push` method, which can add items to the stack storage.
+* An `isEmpty` method, which returns a boolean. Should return `true` when the stack storage is empty and the current quantity is 0.
+```js
+const testStack = createStack();
+testStack.isEmpty() // true;
+```
+
+* An `isFull` method, which returns a boolean. Should return `true` when the storage is full, i.e. when the current quantity equals the maxSize.
+```js
+const testStack = createStack();
+testStack.isFull() // false;
+```
+
+* A `push` method, which can add items to the stack storage, provided the stack is not already full.
 ```js 
 const testStack = createStack();
 testStack.push('apple');
-testStack.storage // { 1 : 'apple' }
+testStack.storage; // { 1 : 'apple' }
 testStack.push('orange');
-testStack.storage // { 1 : 'apple', 2 : 'orange' } 
+testStack.storage; // { 1 : 'apple', 2 : 'orange' } 
 ```
 
-* It should have a `pop` method, which can remove items from the stack storage.  It will also return the last item removed from the stack storage.
+* A `pop` method, which can remove items from the stack storage, provided the stack is not empty.  It will also return the item removed from the stack.
 ```js
 const testStack = createStack();
 testStack.push('apple');
 testStack.push('orange');
-testStack.push('banana');
-testStack.pop() // returns 'banana'
-testStack.storage // {1 : 'apple', 2 : 'orange' }
+testStack.push('banana'); 
+testStack.storage; // { 1 : 'apple', 2 : 'orange', 3: 'banana' }
+testStack.pop(); // returns 'banana'
+testStack.storage; // {1 : 'apple', 2 : 'orange' }
 ```
 
-
-* It should have a `peek` method that will show the item at the top of the stack storage.
+* A `peek` method that will show the item at the top of the stack storage.
 
 ```js
 const testStack = createStack();
@@ -64,43 +84,47 @@ testStack.push('orange');
 testStack.push('banana');
 testStack.push('kiwi');
 testStack.push('pear');
+testStack.storage; // { 1 : 'apple', 2 : 'orange', 3: 'banana', 4: 'kiwi', 5: 'pear' }
 testStack.peek() // returns 'pear'
 ```
 
-## Queues
+## **Queues**
 
-2.  Implement a `createQueue` factory function that returns a queue instance.  The `createQueue` function will take a single argument representing the limit of the number of items in the queue.  E.g. 
+2.  Implement a `createQueue` factory function that returns a queue instance.\
+The `createQueue` function will take a single argument representing the `maxSize`, the limit of the number of items in the queue.
 
 ```js 
-
 const testQueue = createQueue(5);
 // the new queue instance is allowed up to 5 items in the queue storage
 ```
 
 An instance of `createQueue` should have the following:
 
-* It should have `front` and `back` properties.  These are both numbers that represent the position of the front and back of the queue.  You can use these properties to add and remove items from the queue at the correct position.
+* `front` and `back` properties, representing the position of the front and back of the queue respectively.  You can use these properties to add and remove items from the queue at the correct position.
 
-* It should have an `enQueue` method that adds items to the **back** of the queue.  Items can only be added if the queue isn't full of course.
+* A `storage` property, which is initially an empty object `{}`.
 
-* It should have an `deQueue` method that removes items from the **front** of the queue.
+* An `isEmpty` method that will return a boolean indicating if the queue is empty or not.
 
-* It should have a `getSize` method that returns the number of items in the queue.
+* An `isFull` method that will return a boolean indicating if the queue is full or not.
 
-* It should have an `isFull` method that will return a boolean indicating if the queue is full or not.
+* An `enQueue` method that adds items to the **back** of the queue.  Items can only be added if the queue isn't full.
 
-**NOTE** Implement each data structure in its own file with its own test file.
+* A `deQueue` method that removes items from the **front** of the queue, provided the queue isn't already empty.
 
-#### Important!
+* A `getQuantity` method that returns the number of items in the queue.
 
-You may **not** use JavaScript arrays or any array methods or properties to implement your stack and queue structures. Everything should be implemented with objects and custom methods.
+* A `peek` method that returns the element at the **front** of the queue (without removing it)
 
-# Advanced - only attempt these if you get through stacks and queues!
 
-* For the advanced section you will have to do some research of your own for information about each data structure.
+## Advanced - only attempt these if you get through both stacks and queues!
 
-1) Implement the set data structure. [Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those.
+For the advanced section you will have to do some research of your own for information about each data structure.
 
-2) Implement the tree data structure. [Trees] (https://en.wikipedia.org/wiki/Tree_(data_structure)) also have a lot of methods, many of which may come into tomorrow's sprint. Focus today on implementing methods that add and remove data (e.g. addData, removeData) or return a boolean, (e.g. isParent, isRoot, hasSiblings, isLeaf). Look through the article for ideas on the terminology to use.
+1) Implement the **set** data structure.\
+[Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those.
+
+2) Implement the **tree** data structure.\
+[Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)) also have a lot of methods, many of which may come into tomorrow's sprint. Focus today on implementing methods that add and remove data (e.g. addData, removeData) or return a boolean, (e.g. isParent, isRoot, hasSiblings, isLeaf). Look through the article for ideas on the terminology to use.
 
 3) If you finish this, have a look for other potential data structures and see if you can implement useful functions they may have.
