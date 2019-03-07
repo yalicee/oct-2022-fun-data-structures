@@ -104,6 +104,8 @@ An instance of `createQueue` should have the following:
 
 * A `storage` property, which is initially an empty object `{}`.
 
+* A `getQuantity` method that returns the number of items in the queue.
+
 * An `isEmpty` method that will return a boolean indicating if the queue is empty or not.
 
 * An `isFull` method that will return a boolean indicating if the queue is full or not.
@@ -111,8 +113,6 @@ An instance of `createQueue` should have the following:
 * An `enQueue` method that adds items to the **back** of the queue.  Items can only be added if the queue isn't full.
 
 * A `deQueue` method that removes items from the **front** of the queue, provided the queue isn't already empty.
-
-* A `getQuantity` method that returns the number of items in the queue.
 
 * A `peek` method that returns the element at the **front** of the queue (without removing it)
 
