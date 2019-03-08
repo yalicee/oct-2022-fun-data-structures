@@ -43,18 +43,6 @@ const testStack = createStack(5);
 testStack.maxSize // 5
 ```
 
-* An `isEmpty` method, which returns a boolean. Should return `true` when the stack storage is empty and the current quantity is 0.
-```js
-const testStack = createStack();
-testStack.isEmpty() // true;
-```
-
-* An `isFull` method, which returns a boolean. Should return `true` when the storage is full, i.e. when the current quantity equals the maxSize.
-```js
-const testStack = createStack();
-testStack.isFull() // false;
-```
-
 * A `push` method, which can add items to the stack storage, provided the stack is not already full.
 ```js 
 const testStack = createStack();
@@ -75,8 +63,19 @@ testStack.pop(); // returns 'banana'
 testStack.storage; // {1 : 'apple', 2 : 'orange' }
 ```
 
-* A `peek` method that will show the item at the top of the stack storage.
+* An `isEmpty` method, which returns a boolean. Should return `true` when the stack storage is empty and the current quantity is 0.
+```js
+const testStack = createStack();
+testStack.isEmpty() // true;
+```
 
+* An `isFull` method, which returns a boolean. Should return `true` when the storage is full, i.e. when the current quantity equals the maxSize.
+```js
+const testStack = createStack();
+testStack.isFull() // false;
+```
+
+* A `peek` method that will show the item at the top of the stack storage.
 ```js
 const testStack = createStack();
 testStack.push('apple');
@@ -104,15 +103,15 @@ An instance of `createQueue` should have the following:
 
 * A `storage` property, which is initially an empty object `{}`.
 
+* An `enQueue` method that adds items to the **back** of the queue.  Items can only be added if the queue isn't full.
+
+* A `deQueue` method that removes items from the **front** of the queue, provided the queue isn't already empty.
+
 * A `getQuantity` method that returns the number of items in the queue.
 
 * An `isEmpty` method that will return a boolean indicating if the queue is empty or not.
 
 * An `isFull` method that will return a boolean indicating if the queue is full or not.
-
-* An `enQueue` method that adds items to the **back** of the queue.  Items can only be added if the queue isn't full.
-
-* A `deQueue` method that removes items from the **front** of the queue, provided the queue isn't already empty.
 
 * A `peek` method that returns the element at the **front** of the queue (without removing it)
 
