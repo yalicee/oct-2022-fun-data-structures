@@ -14,11 +14,11 @@ A queue data structure would be useful on occasions where you want to process ta
 - Learn, throughout the sprint, about the 4 rules of `this` in JavaScript.
 - Introduce yourself to data structures.
 
-**NOTE** Implement each data structure in its own file with its own test file.
-
 ### * Important! *
 
-You must **not** use JavaScript arrays or any array methods or properties to implement your stack and queue structures. Everything should be implemented with _objects_ and custom methods.
+- Each data structure should be implemented within it's own dedicated file
+- Each data structure **must** have it's own test file and be implemented using TDD.
+- You must **not** use JavaScript arrays or any array methods or properties to implement your stack and queue structures. Everything should be implemented with _objects_ and custom methods.
 
 ## **Stacks**
 
