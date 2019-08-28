@@ -11,7 +11,7 @@ A queue data structure would be useful on occasions where you want to process ta
 ### **Learning objectives**
 
 - Fully understand the functional pattern of object creation in JavaScript, together with its pros and cons. 
-- Learn, throughout the sprint, about the 4 rules of `this` in JavaScript.
+- Learn, throughout the sprint, about the rules of `this` in JavaScript.
 - Introduce yourself to data structures.
 
 ### * Important! *
