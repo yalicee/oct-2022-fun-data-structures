@@ -25,7 +25,7 @@ A queue data structure would be useful on occasions where you want to process ta
 1.  Implement a `createStack` factory function.\
 An instance of `createStack` should have the following:
 
-* A `quantity` property which should have an initial value of 0 and represents the number of items currently in the stack storage.
+* A `quantity` property which has an initial value of 0 and represents the number of items currently in the stack storage.
 ```js
 const testStack = createStack();
 testStack.quantity  // 0
@@ -43,7 +43,7 @@ const testStack = createStack(5);
 testStack.maxSize // 5
 ```
 
-* A `push` method, which can add items to the stack storage, provided the stack is not already full.
+* A `push` method, which adds items to the stack storage, provided the stack is not already full.
 ```js 
 const testStack = createStack();
 testStack.push('apple');
@@ -99,7 +99,7 @@ const testQueue = createQueue(5);
 
 An instance of `createQueue` should have the following:
 
-* `front` and `back` properties, representing the position of the front and back of the queue respectively.  You can use these properties to add and remove items from the queue at the correct position.
+* `front` and `back` properties, representing the position of the front and back of the queue respectively.  You should use these properties to add and remove items from the queue at the correct position.
 
 * A `storage` property, which is initially an empty object `{}`.
 
