@@ -28,7 +28,7 @@ console.log(ship1 === ship2);
 
 Consider the excerpt of code above and then answer the following questions:
 
-a) What is the **return value** of `createSapceShip` ( think carefully about this one )</br>
+a) What is the **return value** of `createSpaceShip` ( think carefully about this one ) </br>
 b) What will line 26 print when `ship1` is compared with `ship2` using `===`</br>
 c) How could we change `createSpaceShip` so we have a reusable function that generates brand new space ship instances
 
