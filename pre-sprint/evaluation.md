@@ -12,7 +12,7 @@ Consider the following snippet below:
 
 ```js
 const spaceShip = {
-  name: 'USS Enterprise'
+  name: 'USS Enterprise',
   captain: 'Jean Luc-Picard',
   class: 'NCC-1701-D'
 }
