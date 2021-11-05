@@ -37,7 +37,7 @@ const testStack = createStack();
 testStack.storage // {}
 ```
 
-* A `maxSize` property, which can either be passed as an argument when creating the stack, or use a default value.
+* A `maxSize` property, which can either be passed as an argument when creating the stack, or when no argument is passed it uses a default value.
 ```js
 const testStack = createStack(5);
 testStack.maxSize // 5
