@@ -130,3 +130,5 @@ Once you are able to create and store data implement methods to traverse your tr
 
 3) Re-implement the Javascript **Map** data structure.\
 [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) has a series of iteration methods that make use of Javascript iterators. Research these and re-implement the methods available on JS Maps. 
+
+**Further Reading** Research `Linked List` and `Graph` data structures and their variations.
