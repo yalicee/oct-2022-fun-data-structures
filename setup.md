@@ -14,10 +14,12 @@ Command
 
 Add the following section to your package.json:
 
+**nb** if you want jest to automatically re-run your tests whenever you change a file add the `--watch` flag to the end 
+
 ```json
 {
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest"
   }
 }
 ```

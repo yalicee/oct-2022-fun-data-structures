@@ -55,10 +55,10 @@ function createDataSet(...values) {
   return newDataSet;
 }
 
-const dataSet1 = createDataSet(1, 2, 3, 4, 5, 6, 7);
+const dataSet1 = createDataSet(1, 2, 3);
 console.log(dataSet1.calculateMean());
 
-const dataSet2 = createDataSet(1, 2, 3, 4, 5, 6, 7, 8);
+const dataSet2 = createDataSet(1, 2, 3, 4, 5);
 
 console.log(dataSet1.calculateMean === dataSet2.calculateMean);
 ```
@@ -122,5 +122,4 @@ describe('createPerson()', () => {
 });
 ```
 
-a) What kind of function is `createPerson` ?</br>
-b) How would you describe what the test above is asserting ?</br>
+What kind of function is `createPerson` ?
