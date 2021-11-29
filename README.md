@@ -121,9 +121,12 @@ An instance of `createQueue` should have the following:
 For the advanced section you will have to do some research of your own for information about each data structure.
 
 1) Implement the **set** data structure.\
-[Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those.
+[Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those. A good place to start would be`add`, `delete`, `has`, `union` and `intersection`.
 
 2) Implement the **tree** data structure.\
-[Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)) also have a lot of methods, many of which may come into tomorrow's sprint. Focus today on implementing methods that add and remove data (e.g. addData, removeData) or return a boolean, (e.g. isParent, isRoot, hasSiblings, isLeaf). Look through the article for ideas on the terminology to use.
+[Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)) also have a lot of methods. Focus on implementing methods that add and remove data (e.g. addData, removeData) or return a boolean, (e.g. isParent, isRoot, hasSiblings, isLeaf). Look through the article for ideas on the terminology to use.
 
-3) If you finish this, have a look for other potential data structures and see if you can implement useful functions they may have.
+Once you are able to create and store data implement methods to traverse your trees. Research and implement `breadthFirstSearch` and `depthFirstSearch`
+
+3) Re-implement the Javascript **Map** data structure.\
+[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) has a series of iteration methods that make use of Javascript iterators. Research these and re-implement the methods available on JS Maps. 
