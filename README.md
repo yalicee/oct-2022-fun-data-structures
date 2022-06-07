@@ -123,12 +123,18 @@ For the advanced section you will have to do some research of your own for infor
 1) Implement the **set** data structure.\
 [Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) have lots of potential methods you could implement so pick out a few that seem most useful/interesting and implement those. A good place to start would be`add`, `delete`, `has`, `union` and `intersection`.
 
-2) Implement the **tree** data structure.\
+2) Re-implement the Javascript **Map** data structure.\
+[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) has a series of iteration methods that make use of Javascript iterators. Research these and re-implement the methods available on JS Maps. 
+
+3) Implement the **tree** data structure.\
 [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)) also have a lot of methods. Focus on implementing methods that add and remove data (e.g. addData, removeData) or return a boolean, (e.g. isParent, isRoot, hasSiblings, isLeaf). Look through the article for ideas on the terminology to use.
 
 Once you are able to create and store data implement methods to traverse your trees. Research and implement `breadthFirstSearch` and `depthFirstSearch`
 
-3) Re-implement the Javascript **Map** data structure.\
-[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) has a series of iteration methods that make use of Javascript iterators. Research these and re-implement the methods available on JS Maps. 
+### Further Reading 
 
-**Further Reading** Research `Linked List` and `Graph` data structures and their variations.
+Research these data structures and their variants. Once you're familiar with how they work implement your own versions of them using facotry functions. 
+
+4) `Linked List`
+
+5) `Graph`
