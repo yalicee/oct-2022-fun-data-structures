@@ -9,8 +9,8 @@ function createStack(maxSize = 5) {
   stack.peek = peek;
 
   function push(itemStr) {
-    // this.quantity++;
     if (this.quantity < maxSize) {
+      // this.quantity++;
       this.storage[++this.quantity] = itemStr;
     }
   }
