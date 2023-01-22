@@ -6,12 +6,17 @@ function createStack(maxSize = 5) {
   stack.maxSize = maxSize;
   stack.push = push;
   stack.pop = pop;
+  stack.isFull = isFull;
+  stack.isEmpty = isEmpty;
   stack.peek = peek;
 
-  function push(itemStr) {
-    if (this.quantity < maxSize) {
-      // this.quantity++;
-      this.storage[++this.quantity] = itemStr;
+  return stack;
+}
+
+function push(itemStr) {
+    if (this.quantity < this.maxSize) {
+      this.quantity++;
+      this.storage[this.quantity] = itemStr;
     }
   }
 
@@ -34,8 +39,5 @@ function createStack(maxSize = 5) {
     const peekItem = this.storage[this.quantity];
     return peekItem;
   }
-
-  return stack;
-}
-
+  
 module.exports = createStack;
